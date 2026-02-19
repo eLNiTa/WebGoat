@@ -104,8 +104,14 @@
     <url>https://github.com/WebGoat/WebGoat/issues</url>
   </issueManagement>
 
+
+
   <properties>
     <!-- Shared properties with plugins and version numbers across submodules-->
+    <sonar.organization>elnita</sonar.organization>
+    <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
+    <skipTests>true</skipTests>
+      
     <asciidoctorj.version>2.5.3</asciidoctorj.version>
     <bootstrap.version>3.3.7</bootstrap.version>
     <cglib.version>2.2</cglib.version>
