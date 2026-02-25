@@ -67,7 +67,10 @@ public class Assignment5 extends AssignmentEndpoint {
               ResultSet resultSet = statement.executeQuery();
 
               if (resultSet.next()) {
-                  return success(this).feedback("challenge.solved").feedbackArgs(flags.getFlag(5)).build();
+                  return success(this)
+                          .feedback("challenge.solved")
+                          .feedbackArgs(flags.getFlag(5))
+                          .build();
               } else {
                   return failed(this).feedback("challenge.close").build();
               }
